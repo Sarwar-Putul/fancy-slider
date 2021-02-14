@@ -120,6 +120,7 @@ const changeSlide = (index) => {
 }
 
 searchBtn.addEventListener('click', function() {
+    document.getElementById('result-unavailable').classList.add('d-none');
     document.querySelector('.main').style.display = 'none';
     clearInterval(timer);
     const search = document.getElementById('search');
